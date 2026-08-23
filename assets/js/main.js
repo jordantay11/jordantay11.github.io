@@ -1,0 +1,1 @@
+document.querySelectorAll('.mobile-toggle').forEach(btn=>{btn.addEventListener('click',()=>{const nav=document.querySelector('nav ul');nav.style.display=nav.style.display==='none'?'flex':'none';});});
