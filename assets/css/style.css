@@ -40,10 +40,10 @@
   .hero{padding:68px 0;background-position:68% center}
 }
 
-/* Final mobile logo sizing */
+/* Final mobile header balance: large logo, no tagline overlap */
 @media (max-width: 520px) {
-  .navbar{gap:0;padding:2px 0 4px}
+  .navbar{gap:4px;padding:4px 0 6px}
   .logo{margin:0;line-height:0}
-  .logo img{content:url('../images/centennial-logo-mobile.png');width:280px;max-width:84vw;height:auto;margin:0}
-  .mobile-toggle{margin-top:-12px;margin-bottom:2px;padding:9px 13px}
+  .logo img{content:url('../images/centennial-logo-mobile.png');width:255px;max-width:80vw;height:auto;margin:0}
+  .mobile-toggle{margin-top:3px;margin-bottom:0;padding:9px 13px}
 }
