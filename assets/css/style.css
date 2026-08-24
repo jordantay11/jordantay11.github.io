@@ -103,10 +103,23 @@
 }
 
 /* v25: mobile and desktop use the same SVG logo asset; no mobile image substitution */
-@media (max-width: 520px) { .logo img{content:normal !important;} }
+@media (max-width: 520px) { .logo img{} }
 
 
 /* v26 canonical logo: HTML source is the same SVG on desktop and mobile */
 @media (max-width: 520px) {
-  .logo img{content:normal !important;width:255px;max-width:80vw;height:auto;margin:0}
+  .logo img{width:255px;max-width:80vw;height:auto;margin:0}
+}
+
+
+/* v27 inline vector logo: no external logo asset dependency */
+.logo img{display:block;height:auto;}
+@media (min-width: 961px){
+  .navbar .logo img{width:245px;max-width:none;}
+}
+@media (max-width: 960px){
+  .navbar .logo img{width:205px;max-width:100%;height:auto;}
+}
+@media (max-width: 520px){
+  .navbar .logo img{width:255px;max-width:80vw;height:auto;margin:0;}
 }
