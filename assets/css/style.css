@@ -47,3 +47,57 @@
   .logo img{content:url('../images/centennial-logo-mobile.png');width:255px;max-width:80vw;height:auto;margin:0}
   .mobile-toggle{margin-top:3px;margin-bottom:0;padding:9px 13px}
 }
+
+
+/* v22 Desktop header refinement: larger brand left, larger nav, compact height */
+@media (min-width: 961px) {
+  .topbar{font-size:15px}
+  .topbar .container{padding:7px 0}
+  header{position:sticky;top:0}
+  .navbar{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    gap:28px;
+    padding:10px 0;
+  }
+  .logo{display:flex;align-items:center;justify-content:flex-start}
+  .logo img{width:245px;max-width:none}
+  nav{min-width:0}
+  nav ul{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap:22px;
+    font-size:16px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  .nav-cta{
+    display:inline-block;
+    padding:13px 21px;
+    font-size:15px;
+    border-radius:8px;
+    white-space:nowrap;
+  }
+  .mobile-toggle{display:none}
+}
+
+@media (min-width: 961px) and (max-width: 1120px) {
+  .navbar{gap:20px}
+  .logo img{width:225px}
+  nav ul{gap:15px;font-size:15px}
+  .nav-cta{padding:12px 17px;font-size:14px}
+}
+
+
+/* v23: tighter desktop header using cropped vector logo */
+@media (min-width: 961px) {
+  .navbar{padding:3px 0;gap:28px}
+  .logo img{width:245px;height:auto;max-width:none}
+}
+@media (min-width: 961px) and (max-width: 1120px) {
+  .navbar{padding:3px 0;gap:20px}
+  .logo img{width:225px}
+}
