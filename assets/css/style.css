@@ -39,3 +39,12 @@
   .logo img{width:195px}
   .hero{padding:68px 0;background-position:68% center}
 }
+
+
+/* Mobile logo refinement: use tightly cropped logo so the tagline sits close to the menu */
+@media (max-width: 520px) {
+  .navbar{gap:4px;padding:6px 0 7px}
+  .logo{margin:0;line-height:0}
+  .logo img{content:url('../images/centennial-logo-mobile.png');width:255px;max-width:78vw;height:auto;margin:0}
+  .mobile-toggle{margin-top:2px}
+}
