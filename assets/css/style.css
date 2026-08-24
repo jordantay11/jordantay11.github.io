@@ -44,7 +44,7 @@
 @media (max-width: 520px) {
   .navbar{gap:4px;padding:4px 0 6px}
   .logo{margin:0;line-height:0}
-  .logo img{content:url('../images/centennial-logo.svg');width:255px;max-width:80vw;height:auto;margin:0}
+  .logo img{width:255px;max-width:80vw;height:auto;margin:0}
   .mobile-toggle{margin-top:3px;margin-bottom:0;padding:9px 13px}
 }
 
@@ -100,4 +100,13 @@
 @media (min-width: 961px) and (max-width: 1120px) {
   .navbar{padding:3px 0;gap:20px}
   .logo img{width:225px}
+}
+
+/* v25: mobile and desktop use the same SVG logo asset; no mobile image substitution */
+@media (max-width: 520px) { .logo img{content:normal !important;} }
+
+
+/* v26 canonical logo: HTML source is the same SVG on desktop and mobile */
+@media (max-width: 520px) {
+  .logo img{content:normal !important;width:255px;max-width:80vw;height:auto;margin:0}
 }
