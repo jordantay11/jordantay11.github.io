@@ -44,7 +44,7 @@
 @media (max-width: 520px) {
   .navbar{gap:4px;padding:4px 0 6px}
   .logo{margin:0;line-height:0}
-  .logo img{content:url('../images/centennial-logo-mobile.png');width:255px;max-width:80vw;height:auto;margin:0}
+  .logo img{content:url('../images/centennial-logo.svg');width:255px;max-width:80vw;height:auto;margin:0}
   .mobile-toggle{margin-top:3px;margin-bottom:0;padding:9px 13px}
 }
 
